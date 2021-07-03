@@ -1,14 +1,63 @@
 import "./styles.css";
-import { useRef } from "react";
+// import { useCallback, useEffect, useState } from "react";
 import Menu from "./Menu";
 
 function App() {
-  const clickRef = useRef({ left: 0, top: 0 });
-
   return (
-    <div ref={clickRef} className="app">
-      <Menu clickRef={clickRef} />
+    <div className="app">
+      Right click on somewhere.
+      <Menu />
     </div>
   );
 }
+
+// function App() {
+//   const [anchorPoint, setAnchorPoint] = useState({ x: 0, y: 0 });
+//   const [show, setShow] = useState(false); // hide menu
+
+//   const handleContextMenu = useCallback(
+//     (event) => {
+//       event.preventDefault();
+//       setAnchorPoint({ x: event.pageX, y: event.pageY });
+//       setShow(true);
+//     },
+//     [setAnchorPoint]
+//   );
+
+//   const handleClick = useCallback(() => (show ? setShow(false) : null), [show]);
+
+//   useEffect(() => {
+//     document.addEventListener("click", handleClick);
+//     document.addEventListener("contextmenu", handleContextMenu);
+//     return () => {
+//       document.removeEventListener("click", handleClick);
+//       document.removeEventListener("contextmenu", handleContextMenu);
+//     };
+//   });
+
+//   return (
+//     <div className="app">
+//       {show ? (
+//         <ul
+//           className="menu"
+//           style={{
+//             top: anchorPoint.y,
+//             left: anchorPoint.x
+//           }}
+//         >
+//           <li>Share to..</li>
+//           <li>Cut</li>
+//           <li>Copy</li>
+//           <li>Paste</li>
+//           <hr className="divider" />
+//           <li>Refresh</li>
+//           <li>Exit</li>
+//         </ul>
+//       ) : (
+//         <> </>
+//       )}
+//     </div>
+//   );
+// }
+
 export default App;

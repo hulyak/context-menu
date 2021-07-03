@@ -24,7 +24,7 @@
 }
 
 .menu li {
-  padding: 0.2em 1em;
+  padding: 0.5em 1em;
   color: #000;
   cursor: pointer;
 }
@@ -32,4 +32,9 @@
 .menu li:hover {
   background-color: #f2f2f2;
   border-left: 4px solid #ccc;
+}
+
+.divider {
+  border-bottom: 1px solid #eee;
+  margin: 10px 0;
 }

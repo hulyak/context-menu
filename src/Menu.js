@@ -1,7 +1,7 @@
 import useContextMenu from "./useContextMenu";
 
-const Menu = ({ clickRef }) => {
-  const { anchorPoint, show } = useContextMenu(clickRef);
+const Menu = () => {
+  const { anchorPoint, show } = useContextMenu();
 
   if (show) {
     return (
