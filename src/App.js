@@ -5,7 +5,7 @@ import Menu from "./Menu";
 function App() {
   return (
     <div className="app">
-      Right click on somewhere.
+      <h1>Right click somewhere on the page..</h1>
       <Menu />
     </div>
   );
