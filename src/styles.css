@@ -34,8 +34,6 @@
   position: absolute;
   list-style: none;
   box-shadow: 0 0 20px 0 #ccc;
-  opacity: 1;
-  transition: opacity 0.5s linear;
 }
 
 .menu__list {
