@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./App.css";
 // import { useCallback, useEffect, useState } from "react";
 import Menu from "./Menu";
 
@@ -10,6 +10,8 @@ function App() {
     </div>
   );
 }
+
+export default App;
 
 // function App() {
 //   const [anchorPoint, setAnchorPoint] = useState({ x: 0, y: 0 });
@@ -59,5 +61,3 @@ function App() {
 //     </div>
 //   );
 // }
-
-export default App;

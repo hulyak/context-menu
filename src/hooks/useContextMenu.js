@@ -13,7 +13,7 @@ const useContextMenu = () => {
     [setShow, setAnchorPoint]
   );
 
-  const handleClick = useCallback(() => (show ? setShow(false) : null), [show]);
+  const handleClick = useCallback(() => show && setShow(false), [show]);
 
   useEffect(() => {
     document.addEventListener("click", handleClick);
